@@ -36,7 +36,7 @@ spec:
     spec:
       initContainers:
         - name: init-copy
-          image: busybox
+          image: image-registry.openshift-image-registry.svc:5000/common/busybox:latest
           command: ['sh','-c','cp /config-map/* /config-storage; ls -lrt /config-storage']
           volumeMounts:
           - name: {{.Release.Name}}-seedusers
