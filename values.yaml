@@ -1,5 +1,5 @@
 OpenLdap:
-  Image: "docker.io/osixia/openldap"
+  Image: "image-registry.openshift-image-registry.svc:5000/common/openldap@sha256:e177feaceea1a8107abde0bb0c1b2df5186f37b83ea78ec8f761e2aa56ecc11a"
   ImageTag: "1.4.0"
   ImagePullPolicy: "Always"
   Component: "openldap"
@@ -16,7 +16,7 @@ OpenLdap:
 
 PhpLdapAdmin:
   Component: "phpadmin"
-  Image: "docker.io/osixia/phpldapadmin"
+  Image: "image-registry.openshift-image-registry.svc:5000/common/phpldapadmin@sha256:80510487465ba04733c681e04f14352a0ef4f2a0092371ef972d2daf6f1f0218"
   ImageTag: "0.9.0"
   ImagePullPolicy: "Always"
   Replicas: 1
